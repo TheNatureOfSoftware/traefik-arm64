@@ -13,6 +13,4 @@ if [ ! -f traefik_linux-arm64 ]; then
   chmod a+x traefik_linux-arm64
 fi
 
-docker build -t thenatureofsoftware/traefik-arm64:$TRAEFIK_VERSION .
-docker push thenatureofsoftware/traefik-arm64:latest
-docker push thenatureofsoftware/traefik-arm64:$TRAEFIK_VERSION
+docker build -t thenatureofsoftware/traefik-arm64 .
