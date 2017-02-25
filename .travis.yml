@@ -8,7 +8,7 @@ script:
 # build image
 - ./build.sh
 # test image
-- docker run thenatureofsoftware/traefik-arm64 version
+- docker run -it thenatureofsoftware/traefik-arm64 version
 # push image
 - >
   if [ "$TRAVIS_BRANCH" == "master" ] && [ "$TRAVIS_PULL_REQUEST" == "false" ]; then
